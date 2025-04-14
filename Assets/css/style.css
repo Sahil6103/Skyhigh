@@ -1,0 +1,354 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: metropolis;
+  src: url(../../Assets/fonts/metropolis/Metropolis-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+  font-family: metropolis;
+}
+
+::selection {
+  color: white;
+  background-color: black;
+}
+.header-hero {
+  position: relative;
+  height: 100vh;
+}
+
+.header-hero .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("http://ollis.like-themes.com/wp-content/uploads/2018/02/parallax-slider.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nav__menu {
+  transition: left 0.4s;
+}
+
+.nav__link {
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-out, visibility 0.4s, opacity 0.4s;
+}
+
+.nav__link:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.nav__link:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.nav__link:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+/* Sibling fade animation */
+.nav__menu:has(.nav__link:hover) .nav__link:not(:hover) {
+  opacity: 0.4;
+}
+
+/* Show menu */
+.show-menu {
+  left: 0;
+}
+
+/* Animation link when displaying menu */
+.show-menu .nav__link {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.main-header-hero {
+  position: relative;
+  z-index: 1;
+}
+
+.aboutus {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.aboutus .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("https://images.unsplash.com/photo-1483357962636-e8cc552b1a08?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(50%);
+}
+
+.about-detail {
+  position: relative;
+  z-index: 1;
+}
+
+.architecture {
+  position: relative;
+  overflow: hidden;
+}
+
+#architecture1 .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* filter: brightness(50%); */
+}
+
+#architecture2 .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* filter: brightness(50%); */
+}
+
+#architecture3 .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("https://images.unsplash.com/photo-1518005076933-9ef6bec005cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* filter: brightness(50%); */
+}
+
+.architecture .detail {
+  position: relative;
+  z-index: 1;
+}
+
+.partner {
+  position: relative;
+  overflow: hidden;
+}
+
+.partner .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2023/05/18/18/45/building-8003029_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(50%);
+}
+
+.partner .detail {
+  position: relative;
+  z-index: 1;
+}
+
+.experience {
+  position: relative;
+  overflow: hidden;
+}
+
+.experience .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("https://images.unsplash.com/photo-1460574283810-2aab119d8511?q=80&w=2063&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* filter: brightness(50%); */
+}
+
+.experience .detail {
+  position: relative;
+  z-index: 1;
+}
+
+.inquiry {
+  position: relative;
+  overflow: hidden;
+}
+
+.inquiry .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("https://images.unsplash.com/photo-1493397212122-2b85dda8106b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* filter: brightness(50%); */
+}
+
+.inquiry form {
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2022/12/11/21/27/roof-7649801_960_720.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* filter: brightness(50%); */
+}
+
+footer .footer-detail {
+  position: relative;
+  z-index: 1;
+}
+
+.architecture button::before {
+  position: absolute;
+  content: "";
+  clip-path: inset(100% 0 0 0);
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.architecture button:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+
+#architecture3 button::before {
+  position: absolute;
+  content: "";
+  clip-path: inset(100% 0 0 0);
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+#architecture3 button:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+
+.architecture button:hover svg {
+  color: white;
+}
+
+.partner button::before {
+  clip-path: inset(0 100% 0 0);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.partner button:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+
+.partner button:hover svg {
+  color: black;
+}
+
+.state1 span {
+  transition: all 0.3s;
+}
+
+.state1 span:hover {
+  background-color: black;
+  color: white;
+  outline-offset: 0;
+}
+
+/* =============cursor============= */
+.custom-cursor {
+  outline: 2px dashed rgb(232, 232, 232);
+  outline-offset: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%) rotate(0deg);
+  pointer-events: none;
+  transition: background-color 0.5s, transform 0.5s, width 0.3s, height 0.3s;
+  z-index: 1000;
+  mix-blend-mode: difference;
+  animation: rotate linear 3s infinite;
+}
+
+.custom-cursor.large {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

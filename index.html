@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY HIGH - Home</title>
+    <!-- locomotive CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- Custom cursor -->
+    <div class="custom-cursor hidden md:block"></div>
+
+    <main data-scroll-container>
+        <!-- Header and Hero Section -->
+        <section class="header-hero" data-scroll-section>
+            <div class="parallax" data-scroll data-scroll-speed="-5"></div>
+            <header class="header md:absolute md:w-full md:top-0 md:left-0 z-[100]" id="header">
+                <nav
+                    class="nav px-6 md:px-20 py-8 absolute w-full md:relative flex justify-between items-center md:h-[15vh]">
+                    <a href="#" class="nav__logo text-white font-semibold"><span class="logo px-2">
+                            <img src="Assets/img/logo-black.png" alt="" class="w-[40%]">
+                        </span></a>
+
+                    <div class="nav__menu fixed md:static -left-[100%] top-0 bg-black md:bg-transparent w-[100vw] h-[100vh] md:h-fit pt-[6rem] px-[3.5rem] pb-[4.5rem] md:p-0 flex flex-col md:flex-row justify-start md:justify-end md:items-center gap-y-10 md:space-y-0 md:space-x-10 z-[10]"
+                        id="nav-menu">
+
+                        <a href="#"
+                            class="nav__link text-white hover:text-slate-200 text-[1.5rem] font-semibold md:text-base flex items-center lg:translate-x-0">
+                            Home
+                        </a>
+
+                        <a href="#"
+                            class="nav__link text-white hover:text-slate-200 text-[1.5rem] font-semibold md:text-base flex items-center lg:translate-x-0">
+                            About Us
+                        </a>
+
+                        <a href="#"
+                            class="nav__link text-white hover:text-slate-200 text-[1.5rem] font-semibold md:text-base flex items-center lg:translate-x-0">
+                            Contact
+                        </a>
+
+                        <div class="absolute top-10 right-6 text-white text-4xl cursor-pointer md:hidden"
+                            id="nav-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
+                                color="#ffffff" fill="none">
+                                <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="nav__toggle flex md:hidden text-white cursor-pointer" id="nav-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
+                            color="#ffffff" fill="none">
+                            <path d="M10 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M4 19L14 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="hero px-5 flex justify-center items-center h-[100vh]">
+                <div data-scroll data-scroll-speed="-2"
+                    class="text flex flex-col justify-center items-center lg:items-center text-[3rem] md:text-[4.5rem] lg:text-[6rem] text-white font-bold leading-tight">
+                    <div class="text flex flex-col justify-center items-center z-0 font-extrabold">
+                        <span>Creative</span>
+                        <span>Architecture</span>
+                        <span>Bureau</span>
+                    </div>
+                </div>
+        </section>
+
+        <!-- about us -->
+        <section class="aboutus h-[100vh] flex flex-col justify-center items-center" data-scroll-section>
+            <div class="parallax" data-scroll data-scroll-speed="-2"></div>
+            <div data-scroll data-scroll-speed="-1"
+                class="about-detail px-5 lg:px-20 flex flex-col justify-center items-center text-white gap-8">
+                <h1
+                    class="text-center text-[2rem] md:text-[2.8rem] lg:text-[3.5rem] leading-tight font-bold w-full lg:w-[80%]">
+                    The best architectural and construction agency
+                </h1>
+                <p class="text-center w-full md:w-[80%] text-[1.1rem] lg:text-[1.2rem]">
+                    Cras bibendum sagittis consectetur. Nulla ultrices dolor dui, id tempor eros venenatis a.
+                    Aliquam porta dolor risus, et ultricies nisi venenatis sed.
+                </p>
+            </div>
+        </section>
+        <!-- end about us -->
+
+        <!-- architecture 1 -->
+        <section class="architecture px-5 md:px-10 lg:px-20 h-[100vh] relative flex flex-col justify-center"
+            id="architecture1" data-scroll-section>
+            <div class="parallax" data-scroll data-scroll-speed="-2"></div>
+            <div data-scroll data-scroll-speed="1"
+                class="detail flex flex-col justify-center md:justify-start items-center md:items-start gap-8">
+                <div class="label bg-black text-white px-5 py-[0.5rem] font-bold tracking-wide text-[1.1rem]">
+                    Architecture
+                </div>
+                <h1 class="text-[2.5rem] md:text-[3.5rem] font-bold text-center md:text-left md:w-[60%]">Facade of the
+                    Parliament
+                    Building</h1>
+                <div class="work-detail flex flex-col justify-center items-center md:items-start gap-3">
+                    <div class="detail1">
+                        <span class="font-bold">Area : </span><span class="text-[0.9rem]">2100 m<sup>2</sup></span>
+                    </div>
+                    <div class="detail2">
+                        <span class="font-bold">Completed Date : </span><span class="text-[0.9rem]">September
+                            2022</span>
+                    </div>
+                    <div class=" detail3">
+                        <span class="font-bold">Architect : </span><span class="text-[0.9rem]">Robert Matteus</span>
+                    </div>
+                </div>
+                <button class="relative border border-black px-7 py-3 flex justify-center items-center gap-3 font-bold
+                    text-[0.8rem] hover:text-white transition-all duration-500 cursor-none">READ
+                    MORE
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="" height="24" color="#000"
+                            fill="none" class="transition-all duration-500">
+                            <path d="M14 12L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M18.5859 13.6026L17.6194 14.3639C16.0536 15.5974 15.2707 16.2141 14.6354 15.9328C14 15.6515 14 14.6881 14 12.7613L14 11.2387C14 9.31191 14 8.34853 14.6354 8.06721C15.2707 7.7859 16.0536 8.40264 17.6194 9.63612L18.5858 10.3974C19.5286 11.1401 20 11.5115 20 12C20 12.4885 19.5286 12.8599 18.5859 13.6026Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></span></button>
+            </div>
+        </section>
+        <!-- end architecture 1 -->
+
+        <!-- architecture 2 -->
+        <section class="architecture px-5 md:px-10 lg:px-20 h-[100vh] relative flex flex-col justify-center"
+            id="architecture2" data-scroll-section>
+            <div class="parallax" data-scroll data-scroll-speed="-2"></div>
+            <div data-scroll data-scroll-speed="1"
+                class="detail flex flex-col justify-center md:justify-start items-center md:items-end gap-8">
+                <div class="label bg-black text-white px-5 py-[0.5rem] font-bold tracking-wide text-[1.1rem]">
+                    Construction
+                </div>
+                <h1 class="text-[2.5rem] md:text-[3.5rem] font-bold text-center md:text-right md:w-[60%]">Berlin Sport
+                    Arena
+                </h1>
+                <div class="work-detail flex flex-col justify-center items-center md:items-end gap-3">
+                    <div class="detail1">
+                        <span class="font-bold">Area : </span><span class="text-[0.9rem]">1670 m<sup>2</sup></span>
+                    </div>
+                    <div class="detail2">
+                        <span class="font-bold">Completed Date : </span><span class="text-[0.9rem]">December 201</span>
+                    </div>
+                    <div class=" detail3">
+                        <span class="font-bold">Architect : </span><span class="text-[0.9rem]">Robert Matteus</span>
+                    </div>
+                </div>
+                <button class="relative border border-black px-7 py-3 flex justify-center items-center gap-3 font-bold
+                    text-[0.8rem] hover:text-white transition-all duration-500 cursor-none">READ
+                    MORE
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="" height="24" color="#000"
+                            fill="none" class="transition-all duration-500">
+                            <path d="M14 12L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M18.5859 13.6026L17.6194 14.3639C16.0536 15.5974 15.2707 16.2141 14.6354 15.9328C14 15.6515 14 14.6881 14 12.7613L14 11.2387C14 9.31191 14 8.34853 14.6354 8.06721C15.2707 7.7859 16.0536 8.40264 17.6194 9.63612L18.5858 10.3974C19.5286 11.1401 20 11.5115 20 12C20 12.4885 19.5286 12.8599 18.5859 13.6026Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></span></button>
+            </div>
+        </section>
+        <!-- end architecture 2 -->
+
+        <!-- architecture 3 -->
+        <section class="architecture px-5 md:px-10 lg:px-20 h-[100vh] relative flex flex-col justify-center"
+            id="architecture3" data-scroll-section>
+            <div class="parallax" data-scroll data-scroll-speed="-2"></div>
+            <div data-scroll data-scroll-speed="1"
+                class="detail flex flex-col justify-center md:justify-start items-center md:items-start gap-8">
+                <div class="label bg-black text-white px-5 py-[0.5rem] font-bold tracking-wide text-[1.1rem]">
+                    Architecture
+                </div>
+                <h1 class="text-[2.5rem] md:text-[3.5rem] font-bold text-center md:text-left md:w-[50%]">City library
+                    Building,
+                    London</h1>
+                <div class="work-detail flex flex-col justify-center items-center md:items-start gap-3">
+                    <div class="detail1">
+                        <span class="font-bold">Area : </span><span class="text-[0.9rem]">1270 m<sup>2</sup></span>
+                    </div>
+                    <div class="detail2">
+                        <span class="font-bold">Completed Date : </span><span class="text-[0.9rem]">January 2021</span>
+                    </div>
+                    <div class=" detail3">
+                        <span class="font-bold">Architect : </span><span class="text-[0.9rem]">Lennie Woodard</span>
+                    </div>
+                </div>
+                <button class="relative border border-black px-7 py-3 flex justify-center items-center gap-3 font-bold
+                    text-[0.8rem] hover:text-white transition-all duration-500 cursor-none">READ
+                    MORE
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="" height="24" color="#000"
+                            fill="none" class="transition-all duration-500">
+                            <path d="M14 12L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M18.5859 13.6026L17.6194 14.3639C16.0536 15.5974 15.2707 16.2141 14.6354 15.9328C14 15.6515 14 14.6881 14 12.7613L14 11.2387C14 9.31191 14 8.34853 14.6354 8.06721C15.2707 7.7859 16.0536 8.40264 17.6194 9.63612L18.5858 10.3974C19.5286 11.1401 20 11.5115 20 12C20 12.4885 19.5286 12.8599 18.5859 13.6026Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></span></button>
+            </div>
+        </section>
+        <!-- end architecture 3 -->
+
+        <!-- partner -->
+        <section class="partner px-5 md:px-10 lg:px-20 h-[120vh] md:h-[100vh] relative flex flex-col justify-center"
+            data-scroll-section>
+            <div class="parallax" data-scroll data-scroll-speed="-2"></div>
+            <div data-scroll data-scroll-speed="1"
+                class="detail flex flex-col justify-center items-center gap-16 md:gap-6">
+                <h2
+                    class="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] text-white text-center font-bold md:w-[70%] lg:w-[60%]">
+                    Exquisite solutions
+                    by
+                    leading
+                    partners of our
+                    agency
+                </h2>
+
+                <div
+                    class="partner-list h-[35vh] flex md:flex-row flex-wrap justify-center items-center gap-6 md:space-x-10 lg:space-x-20">
+                    <img src="http://ollis.like-themes.com/wp-content/uploads/2018/02/logo_01_w.png" alt=""
+                        class="w-[25%] md:w-[10%] hover:mb-6 transition-all duration-300">
+                    <img src="http://ollis.like-themes.com/wp-content/uploads/2020/01/logo_02_w.png" alt=""
+                        class="w-[25%] md:w-[12%] hover:mb-6 transition-all duration-300">
+                    <img src="http://ollis.like-themes.com/wp-content/uploads/2018/02/logo_03_w.png" alt=""
+                        class="w-[25%] md:w-[10%] hover:mb-6 transition-all duration-300">
+                    <img src="http://ollis.like-themes.com/wp-content/uploads/2018/02/logo_04_w.png" alt=""
+                        class="w-[25%] md:w-[10%] hover:mb-6 transition-all duration-300">
+                    <img src="http://ollis.like-themes.com/wp-content/uploads/2018/02/logo_05_w.png" alt=""
+                        class="w-[25%] md:w-[10%] hover:mb-6 transition-all duration-300">
+                </div>
+                <button
+                    class="px-8 py-4 cursor-none text-center tracking-wide font-medium relative z-[1] flex justify-center items-center gap-2 bg-black text-white text-[0.7rem] hover:text-black transition-all duration-500">
+                    BECOME
+                    A
+                    PARTNER
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="" height="24" color="#fff"
+                            fill="none" class="transition-all duration-500">
+                            <path d="M14 12L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M18.5859 13.6026L17.6194 14.3639C16.0536 15.5974 15.2707 16.2141 14.6354 15.9328C14 15.6515 14 14.6881 14 12.7613L14 11.2387C14 9.31191 14 8.34853 14.6354 8.06721C15.2707 7.7859 16.0536 8.40264 17.6194 9.63612L18.5858 10.3974C19.5286 11.1401 20 11.5115 20 12C20 12.4885 19.5286 12.8599 18.5859 13.6026Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </section>
+        <!-- end partner -->
+
+        <!-- experience -->
+        <section class="experience px-5 py-16 md:px-10 lg:px-20 relative flex justify-center items-center"
+            data-scroll-section>
+            <div class="parallax" data-scroll data-scroll-speed="-2"></div>
+            <div data-scroll data-scroll-speed="1"
+                class="detail py-10 flex flex-col justify-center items-center gap-10">
+                <h1 class="text-[2.2rem] md:text-[2.5rem] lg:text-[4rem] text-center text-black font-bold leading-snug">
+                    15
+                    years of
+                    experience</h1>
+                <p class="text-center text-[1rem] md:w-[60%]">Aliquam erat volutpat. Fusce ac enim et diam laoreet
+                    efficitur
+                    sit amet
+                    id leo.
+                    Aenean luctus fringilla
+                    lobortis. Maecenas ornare eu justo nec iaculis. Quisque id nisl metus.
+                </p>
+                <div
+                    class="states mt-16 flex flex-col md:flex-row md:flex-2 md:flex-wrap justify-center items-center space-y-8 md:space-y-0 md:gap-20">
+                    <div class="state1 flex flex-col justify-center items-center gap-6">
+                        <span
+                            class="bg-[#d2cfcfa2] outline outline-offset-[16px] outline-black rounded-full p-12 w-[90%] text-[2rem] font-bold flex justify-center items-center">95%</span>
+                        <p class="text-[1.2rem] font-bold">Interior Design</p>
+                    </div>
+                    <div class="state1 flex flex-col justify-center items-center gap-6">
+                        <span
+                            class="bg-[#d2cfcfa2] outline outline-offset-[16px] outline-black rounded-full p-12 w-[90%] text-[2rem] font-bold flex justify-center items-center">90%</span>
+                        <p class="text-[1.2rem] font-bold">Architechture</p>
+                    </div>
+                    <div class="state1 flex flex-col justify-center items-center gap-6">
+                        <span
+                            class="bg-[#d2cfcfa2] outline outline-offset-[16px] outline-black rounded-full p-12 w-[90%] text-[2rem] font-bold flex justify-center items-center">80%</span>
+                        <p class="text-[1.2rem] font-bold">Construction</p>
+                    </div>
+                    <div class="state1 flex flex-col justify-center items-center gap-6">
+                        <span
+                            class="bg-[#d2cfcfa2] outline outline-offset-[16px] outline-black rounded-full p-12 w-[90%] text-[2rem] font-bold flex justify-center items-center">92%</span>
+                        <p class="text-[1.2rem] font-bold">Projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end experience -->
+
+        <!-- inquiry form -->
+        <section class="inquiry px-5 md:px-10 lg:px-20 h-[120vh] relative flex flex-col justify-center items-center"
+            data-scroll-section>
+            <div class="parallax" data-scroll data-scroll-speed="-2"></div>
+            <form data-scroll data-scroll-speed="1" action=""
+                class="px-8 md:px-16 py-16 bg-black flex flex-col justify-center items-center gap-6 w-full md:w-[60%] lg:w-[50%] xl:w-[35%]">
+                <h2 class="text-white text-[1.2rem] md:text-[1.4rem] w-full text-center font-bold">Send us a request and
+                    our
+                    manager will
+                    contact you
+                    shortly</h2>
+                <div class="input-controls w-[100%] flex flex-col justify-center items-center gap-6">
+                    <div class="control w-[100%]">
+                        <input type="text"
+                            class="px-4 py-[16px] font-thin w-[100%] text-black placeholder:text-slate-500"
+                            placeholder="Name">
+                    </div>
+                    <div class="control w-[100%]">
+                        <input type="email"
+                            class="px-4 py-[16px] font-thin w-[100%] text-black placeholder:text-slate-500"
+                            placeholder="Email">
+                    </div>
+                    <div class="control w-[100%]">
+                        <input type="password"
+                            class="px-4 py-[16px] font-thin w-[100%] text-black placeholder:text-slate-500"
+                            placeholder="Password">
+                    </div>
+                    <div class="control w-[100%]">
+                        <button
+                            class="bg-white cursor-none font-bold w-[100%] py-[16px] px-10 hover:bg-zinc-600 hover:text-white transition-all duration-500">SEND
+                            REQUEST</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- end inquiry form -->
+
+        <!-- footer -->
+        <footer class="px-5 md:px-10 lg:px-20 h-[80vh] relative flex flex-col justify-center items-center"
+            data-scroll-section>
+            <div class="parallax"></div>
+            <div class="footer-detail" data-scroll data-scroll-speed="-1">
+                <div class="main flex flex-col justify-center items-center gap-8">
+                    <span class="logo flex justify-center items-center">
+                        <img src="Assets/img/logo-white-2.png" alt="" class="w-[25%]">
+                    </span>
+                    <p class="text-white text-center md:w-[60%]">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Incidunt sed
+                        rerum
+                        beatae! Ipsa
+                        rem officia
+                        veritatis eos magnam praesentium repellendus.</p>
+                </div>
+                <div class="quick-links flex flex-col justify-center items-center gap-3 text-white font-semibold mt-10">
+                    <a href="#" class="links hover:text-slate-200 transition-all duration-300">Home</a>
+                    <a href="#" class="links hover:text-slate-200 transition-all duration-300">About</a>
+                    <a href="#" class="links hover:text-slate-200 transition-all duration-300">Contact</a>
+                </div>
+                <div class="social-links flex justify-center items-center gap-5 mt-10">
+                    <div class="facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            color="#ffffff" class="hover:text-slate-400 transition-all duration-300" fill="none">
+                            <path
+                                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path
+                                d="M16.9265 8.02637H13.9816C12.9378 8.02637 12.0894 8.86847 12.0817 9.91229L11.9964 21.4268M10.082 14.0017H14.8847"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            color="#ffffff" class="hover:text-slate-400 transition-all duration-300" fill="none">
+                            <path
+                                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path
+                                d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="x">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            color="#ffffff" class="hover:text-slate-400 transition-all duration-300" fill="none">
+                            <path
+                                d="M2.50012 12C2.50012 7.52166 2.50012 5.28249 3.89136 3.89124C5.28261 2.5 7.52178 2.5 12.0001 2.5C16.4785 2.5 18.7176 2.5 20.1089 3.89124C21.5001 5.28249 21.5001 7.52166 21.5001 12C21.5001 16.4783 21.5001 18.7175 20.1089 20.1088C18.7176 21.5 16.4785 21.5 12.0001 21.5C7.52178 21.5 5.28261 21.5 3.89136 20.1088C2.50012 18.7175 2.50012 16.4783 2.50012 12Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M7.00012 17L11.1937 12.8065M17.0001 7L12.8066 11.1935M12.8066 11.1935L9.7779 7H7.00012L11.1937 12.8065M12.8066 11.1935L17.0001 17H14.2223L11.1937 12.8065"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            color="#ffffff" class="hover:text-slate-400 transition-all duration-300" fill="none">
+                            <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M7.00801 7L6.99902 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- end footer -->
+
+    </main>
+
+    <!-- locomotive JS -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+
+
+    <!-- custom JS -->
+    <script type="module" src="Assets/js/main.js"></script>
+</body>
+
+</html>
